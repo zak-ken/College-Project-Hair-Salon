@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up</title>
+  <link type="text/css" rel="stylesheet" href='style.css' />
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script type="text/javascript" src='script.js'></script>
+</head>
+<body>
+
+<!-- This is the navigation section-->
+<div class="nav-box">
+  <ul id="nav_list">
+    <li><a href="home_page.html" class="nav_link">Sarah's Beauty Salon</a></li>
+    <li><img class="logo" src="logo.png" alt="Company Logo" title="company logo"></li>
+    <li><a href="promotion_crud_page.html" class="nav_link">Create Promotion</a></li>
+  </ul>
+</div>
+
+<!-- This is the main body section-->
+<main class="main_page">
+
+  <!-- Bread crumb -->
+  <div class="page-style-1 breadcrumb_box nmt-3">
+      <ul class="breadcrumb">
+        <li><a href="home_page.html">Home Page</a></li>
+        <li>Sign Up Page</li>
+      </ul>
+  </div>
+
+  <form name="sign_up_form" id="sign_up_form" class="page-style-1 vertical_column" method="POST">
+    <h1 class="mt-1">Sign up for a promotion</h1>
+    <div class="input_box">
+      <label for="sign_up_firstname">First Name</label>
+      <input type="text" id="sign_up_firstname" name="sign_up_firstname">
+
+      <label for="sign_up_lastname">Last Name</label>
+      <input type="text" id="sign_up_lastname" name="sign_up_lastname">
+
+      <label for="promotion_telephone_number">Phone Number</label>
+      <input id="promotion_telephone_number" type="tel" name="promotion_telephone_number">
+
+      <label for="promotion_email">Email</label>
+      <input id="promotion_email" type="email" name="promotion_email">
+
+      <label for="promotion_list">Promotion Name</label>
+      <select id="promotion_list" name="promotion_list">
+      </select>
+
+      <label for="promotion_comment">Make a Comment?</label>
+      <textarea id="promotion_comment" name="promotion_comment">
+      </textarea>
+
+      <label for="promotion_items">Select Food</label>
+      <select id="promotion_items" name="promotion_items" multiple>
+      </select>
+    </div>
+
+    <div class="button_actions">
+      <input type="submit" value="Save Data">
+      <input type="reset" value="Reset Fields">
+    </div>
+  </form>
+</main>
+
+</body>
+</html>

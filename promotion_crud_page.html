@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promotion Page</title>
+  <link type="text/css" rel="stylesheet" href='style.css' />
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <script type="text/javascript" src='script.js'></script>
+</head>
+<body>
+
+<!-- This is the navigation section-->
+<div class="nav-box">
+  <ul id="nav_list">
+    <li><a href="home_page.html" class="nav_link">Sarah's Beauty Salon</a></li>
+    <li><img class="logo" src="logo.png" alt="company logo"></li>
+    <li><a href="sign_up_page.html" class="nav_link">Sign Up</a></li>
+  </ul>
+</div>
+
+<!-- This is the main body section-->
+<main class="main_page">
+  <!-- Bread crumb-->
+  <div class="page-style-1 breadcrumb_box">
+      <ul class="breadcrumb">
+        <li><a href="home_page.html">Home Page</a></li>
+        <li>Promotion Creation</li>
+      </ul>
+  </div>
+
+  <!-- Form details-->
+  <form name="promotionForm" id="promotion_form" class="vertical_section page-style-1" method="POST">
+    <h2 class="pt-1">Create or update a promotion</h2>
+    <div class="input_box">
+      <label for="promotion_name">Promotion Name</label>
+      <input name="promotion_name" type="text" id="promotion_name">
+
+      <label for="promotion_type">Promotion Type</label>
+      <select id="promotion_type" name="promotion_type">
+        <option>Hair Day</option>
+        <option>Facial Day</option>
+        <option>Massage Day</option>
+        <option>Nail Day</option>
+        <option>Beard Day</option>
+      </select>
+
+      <label class="bold underline">Items to be served</label>
+
+      <label for="served_item_cold_drink">Cool Drink - R10</label>
+      <input class="pt-1" name="cooldrink" id="served_item_cold_drink" type="checkbox">
+
+      <label for="served_item_tea">Tea - R10</label>
+      <input class="pt-1" name="tea" id="served_item_tea" type="checkbox">
+
+      <label for="served_item_sandwhich">Sandwhiches - R10</label>
+      <input class="pt-1" name="sandwhiche" id="served_item_sandwhich" type="checkbox">
+
+
+      <label for="promotion_description">Promotion Description</label>
+      <textarea name="promotion_description" id="promotion_description"></textarea>
+
+      <label for="promotion_date">Promotion Date</label>
+      <input name="promotion_date" type="date" id="promotion_date">
+
+      <label class="bold underline">Promotion Duration</label>
+      <div class="horizontal">
+        <label for="from_time">From</label>
+        <input name="start_date" class="mr-1" type="time" id="from_time">
+        <label for="to_time">To:</label>
+        <input name="end_date" type="time" id="to_time">
+      </div>
+
+      <label class="bold underline">Promotion Venue</label>
+      <label for="promotion_city" class="nmt-1">City:</label>
+      <input name="promotion_city" type="text" class="mr-1" id="promotion_city">
+      <label for="promotion_city_postal_code">Postal Code: </label>
+      <input name="promotion_postalcode" type="number" id="promotion_city_postal_code">
+      <label for="promotion_address">Promotion Address</label>
+      <textarea name="promotion_address" id="promotion_address"></textarea>
+
+      <p class="bold underline mt-1">Host Details</p>
+      <label for="promotion_host_name" class="nmt-1">Name</label>
+      <input name="host_name" id="promotion_host_name" type="text">
+
+      <label for="promotion_host_surname">Surname</label>
+      <input name="host_surname" id="promotion_host_surname" type="text">
+
+      <label for="promotion_telephone_number">Phone Number</label>
+      <input name="host_phonenumber" id="promotion_telephone_number" type="tel">
+
+      <label for="promotion_email">Email</label>
+      <input name="host_email" id="promotion_email" type="email">
+    </div>
+
+    <input type="submit" value="Create Promotion Summary">
+    <input type="reset" value="Reset Fields" id="reset_page">
+  </form>
+
+  <form class="promotion_form vertical vertical_section page-style-1">
+    <h2 class="pt-1">Update or delete a promotion</h2>
+    <label for="promotion_list" style="padding-top:10px;">Promotion Name</label>
+    <select id="promotion_list" name="promotion_list">
+    </select>
+
+    <input type="button" value="Delete" id="delete_promo">
+    <input type="button" value="Update" id="update_promo">
+  </form>
+
+</main>
+
+</body>
+</html>

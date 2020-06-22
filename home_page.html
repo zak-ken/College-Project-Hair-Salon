@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href='style.css'/>
+  <title>HomePage</title>
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <script type="text/javascript" src='script.js'></script>
+</head>
+
+<body>
+<!-- This is the navigation section-->
+<div class="nav-box">
+  <ul id="nav_list">
+    <li><a href="#" class="nav_link">Sarah's Beauty Salon</a></li>
+    <li><img class="logo" src="logo.png" alt="Company Logo" title="company logo"></li>
+    <li><a href="sign_up_page.html" class="nav_link">Sign Up</a></li>
+  </ul>
+</div>
+<!-- This is the main body section-->
+<main class="main_page">
+  <div class="page-style-1">
+    <h2 class="center">Gallery</h2>
+    <div style="display: flex; flex-direction: row; width: 1175px; justify-content: center;">
+      <button id="img_back" class="image_nav">&#8249;</button>
+      <div class="images_section">
+        <div class="vertical">
+          <img id="image_placeholder1" class="gallery-image" alt="eyebrow threading" title="Threading" src="images/eyebrows.jpeg">
+          <button name="rotate_image" class="button pb-1" style="width:300px;height:15px;">Rotate</button>
+        </div>
+        <div class="vertical">
+          <img id="image_placeholder2" class="gallery-image" alt="Female Hair Washing" title="Hair Washing" src="images/Hair.jpg">
+          <button name="rotate_image" class="button pb-1" style="width:300px;height:15px;">Rotate</button>
+        </div>
+        <div class="vertical">
+          <img id="image_placeholder3" class="gallery-image" alt="Make Up" title="Make Up" src="images/lips.jpeg">
+          <button name="rotate_image" class="button pb-1" style="width:300px;height:15px;">Rotate</button>
+        </div>
+      </div >
+      <button id="img_forward" class="image_nav">&#8250;</button>
+    </div>
+  </div>
+
+  <div class="vertical_section page-style-1">
+    <div id="calendar_section">
+
+      <!-- Calendar Section-->
+      <table id="calendar_table" class="calendar_table">
+        <tr><td colspan="7"><a href="sign_up_page.html" class="nav_link">Sign Up</a></td></tr>
+      </table>
+
+      <!-- promotion creation button-->
+      <a class="button mt-1" id="promotion_creation" href="promotion_crud_page.html">Create Promotion</a>
+    </div>
+
+    <div id="company_info" class="mt-1 mb-1">
+      <h2>What We Do</h2>
+      <p>
+        We are a professional group, who specializes in beauty care from the hair to the
+        toes. We strive to provide a feeling of home here, where the whole family can be
+        brought. We offer a variety of services such as manicure, pedicures, mens haircuts,
+        beard trimmings, eyebrow threading, makeup, Balayage and even massages.
+
+        <img id="floating_image" class="w200 f-left" src="images/child.jpeg" alt="child haircut">We even encourage you to bring
+        your children, as we have a play center, to keep them occupied while you are using our services.
+        If you have any questions please email <a title="Email Us" href="mailto:sarah@example.com?Subject=Enquiry" target="_top">us</a>.
+
+      </p>
+    </div>
+  </div>
+</main>
+
+<!-- This is the footer-->
+<footer id="footer">
+  <hr>
+  <p class="center">Copyright © 2020 Mr Zakariyah Abrahams</p>
+</footer>
+
+</body>
+</html>
