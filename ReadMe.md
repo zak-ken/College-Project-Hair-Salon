@@ -2,7 +2,8 @@
 >
 >All images were taken from  [unsplash](https://unsplash.com)
 
-##Goals of the project: 
+Goals of the project: 
+=====================
 * Create Promotions 
 * Create Attendees
 * Be able to sign attendees up for promotions
@@ -10,7 +11,8 @@
 * Have data be persistent across pages
 
 
-##This project implements:
+This project implements:
+========================
 
 * Zooming images
 * Rotating images
