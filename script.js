@@ -3,8 +3,6 @@ class FormBase {
     validation_errors = []
 
     constructor() {
-        debugger
-
         if (this.constructor === FormBase) {
             throw new Error("Abstract classes can't be instantiated.");
         }
@@ -120,7 +118,8 @@ function validate_promotion(event) {
         promotion.display_errors()
         return
     }
-    return success && save_result
+    return
+    // return success && save_result
 }
 
 function validate_attendee(event) {
