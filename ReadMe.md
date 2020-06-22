@@ -1,5 +1,7 @@
 > This is a college project 
+>
 > Site: https://zak-ken.github.io/College-Project-Hair-Salon/index.html
+>
 >All images were taken from  [unsplash](https://unsplash.com)
 
 Goals of the project: 
